@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>TimHeuer.DotNet.GitHub</id>
+    <version>1.0.0</version>
+    <authors>Tim Heuer</authors>
+    <owners>Tim Heuer</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>Icon.png</icon>
+    <projectUrl>https://github.com/timheuer/dotnet-workflows</projectUrl>
+    <description>GitHub Actions workflow file templates</description>
+    <copyright>© Tim Heuer</copyright>
+    <serviceable>true</serviceable>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <repository type="git" url="https://github.com/timheuer/dotnet-workflows" />
+  </metadata>
+</package>
