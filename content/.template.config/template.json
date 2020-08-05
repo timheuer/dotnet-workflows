@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Microsoft",
+  "classifications": [
+    "Config"
+  ],
+  "name": "dotnet GitHub Actions workflow file",
+  "generatorVersions": "[1.0.0.0-*)",
+  "description": "Creates a GitHub Actions workflow file for a dotnet project.",
+  "tags": {
+    "type": "item"
+  },
+  "groupIdentity": "ActionsFiles",
+  "precedence": "100",
+  "identity": "TimHeuer.DotNet.GitHub.Workflow",
+  "shortName": "workflow",
+  "primaryOutputs": [
+    {
+      "path": ".github/workflows/dotnet-build.yml"
+    }
+  ]
+}
