@@ -1,0 +1,22 @@
+name: "Build"
+
+on: [push, workflow_dispatch]
+
+env:
+  APP_PUBLISH_PATH: './published'
+  NETCORE_VERSION: '3.1.300'                    # set this to the .NET Core version to use
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup .NET Core SDK ${{ env.NETCORE_VERSION }}
+      uses: actions/setup-dotnet@v1.5.0
+      with:
+        dotnet-version: ${{ env.NETCORE_VERSION }}
+    
+    - name: Build Package
+      run: nuget pack
